@@ -1,0 +1,56 @@
+{
+  "cv": {
+    "rows": {
+      "RULE": 8818.0,
+      "MODEL": 8818.0,
+      "HYBRID": 8818.0
+    },
+    "type_acc_on_faults": {
+      "RULE": 0.393,
+      "MODEL": 0.443,
+      "HYBRID": 0.446
+    },
+    "class_acc_on_faults": {
+      "RULE": 0.74,
+      "MODEL": 0.638,
+      "HYBRID": 0.725
+    },
+    "no_fault_recognised": {
+      "RULE": 0.0,
+      "MODEL": 0.793,
+      "HYBRID": 0.393
+    },
+    "faults_called_no_fault": {
+      "RULE": 0.0,
+      "MODEL": 0.183,
+      "HYBRID": 0.047
+    }
+  },
+  "test": {
+    "rows": {
+      "RULE": 1770.0,
+      "MODEL": 1770.0,
+      "HYBRID": 1770.0
+    },
+    "type_acc_on_faults": {
+      "RULE": 0.403,
+      "MODEL": 0.509,
+      "HYBRID": 0.494
+    },
+    "class_acc_on_faults": {
+      "RULE": 0.729,
+      "MODEL": 0.672,
+      "HYBRID": 0.731
+    },
+    "no_fault_recognised": {
+      "RULE": 0.0,
+      "MODEL": 0.767,
+      "HYBRID": 0.282
+    },
+    "faults_called_no_fault": {
+      "RULE": 0.0,
+      "MODEL": 0.16,
+      "HYBRID": 0.03
+    }
+  }
+}

@@ -1,0 +1,95 @@
+Training rows 8818 from 430 pumps; test rows 1770 from 90 pumps; 276 features; 14 classes
+
+=== Cross-validation on training pumps (5 folds, grouped by pump) (8818 rows, 430 pumps) ===
+          rows  type_acc_on_faults  class_acc_on_faults  no_fault_recognised  faults_called_no_fault
+RULE    8818.0               0.393                0.740                0.000                   0.000
+MODEL   8818.0               0.443                0.638                0.793                   0.183
+HYBRID  8818.0               0.446                0.725                0.393                   0.047
+
+Fault-type accuracy per true type:
+                           rows  RULE  MODEL  HYBRID
+label_type                                          
+AIR_ENTRAINMENT              40  0.98   0.00    0.48
+BEARING_WEAR                474  0.38   0.60    0.61
+CAVITATION                  139  0.58   0.22    0.30
+COMMUNICATION_LOSS          292  1.00   1.00    1.00
+DISCHARGE_RESTRICTION       941  0.35   0.50    0.50
+IMBALANCE                   446  0.12   0.17    0.15
+IMPELLER_WEAR               100  0.50   0.00    0.06
+MISALIGNMENT                551  0.54   0.69    0.69
+SENSOR_CALIBRATION_SHIFT    760  0.42   0.32    0.36
+SENSOR_DRIFT                848  0.06   0.13    0.10
+SENSOR_NOISE_SPIKES         471  0.57   0.61    0.62
+SENSOR_STUCK                646  0.68   0.78    0.77
+SUCTION_STRAINER_CLOGGING   865  0.21   0.27    0.25
+
+Fault-type accuracy per instrumentation tier:
+             rows  RULE  MODEL  HYBRID
+tier                                  
+T0_LEGACY    1915  0.44   0.51    0.51
+T1_RETROFIT  2420  0.35   0.42    0.41
+T2_FULL      2238  0.40   0.40    0.43
+
+Confidence check (MODEL): a well-calibrated model has mean_conf close to actually_correct
+               rows  mean_conf  actually_correct
+band                                            
+(-0.001, 0.4]   920       0.34              0.26
+(0.4, 0.6]     2233       0.50              0.36
+(0.6, 0.8]     1975       0.70              0.48
+(0.8, 1.0]     3690       0.93              0.73
+
+Top 15 features (gain):
+                 feature   importance
+                ph_sigma 29918.130601
+                    z_pd 27896.360422
+             ph_dfH_d180 20572.377011
+               rule_conf 16728.380896
+                     z_i 14587.971741
+                    r_2x 12497.269218
+          tier_T0_LEGACY 10637.537700
+       rule_SENSOR_STUCK 10492.380490
+                z_q_d180  9486.162020
+rule_SENSOR_NOISE_SPIKES  9122.600066
+            z_c_absmax30  7724.587515
+                   ph_Ht  7473.858090
+            z_v_absmax30  7048.782244
+                    z_tf  6979.781605
+                   zs_pd  6848.767479
+
+=== HELD-OUT TEST SEEDS (the honest number) (1770 rows, 90 pumps) ===
+          rows  type_acc_on_faults  class_acc_on_faults  no_fault_recognised  faults_called_no_fault
+RULE    1770.0               0.403                0.729                0.000                    0.00
+MODEL   1770.0               0.509                0.672                0.767                    0.16
+HYBRID  1770.0               0.494                0.731                0.282                    0.03
+
+Fault-type accuracy per true type:
+                           rows  RULE  MODEL  HYBRID
+label_type                                          
+BEARING_WEAR                 44  0.48   0.70    0.73
+CAVITATION                   10  0.70   1.00    1.00
+COMMUNICATION_LOSS           84  1.00   1.00    1.00
+DISCHARGE_RESTRICTION       182  0.37   0.48    0.47
+IMBALANCE                   118  0.17   0.41    0.34
+MISALIGNMENT                125  0.34   0.69    0.67
+SENSOR_CALIBRATION_SHIFT    144  0.40   0.32    0.33
+SENSOR_DRIFT                142  0.09   0.11    0.09
+SENSOR_NOISE_SPIKES         102  0.64   0.86    0.86
+SENSOR_STUCK                103  0.83   0.85    0.85
+SUCTION_STRAINER_CLOGGING   188  0.19   0.25    0.22
+
+Fault-type accuracy per instrumentation tier:
+             rows  RULE  MODEL  HYBRID
+tier                                  
+T0_LEGACY     313  0.49   0.53    0.52
+T1_RETROFIT   497  0.35   0.49    0.47
+T2_FULL       432  0.40   0.52    0.50
+
+Confidence check (MODEL): a well-calibrated model has mean_conf close to actually_correct
+               rows  mean_conf  actually_correct
+band                                            
+(-0.001, 0.4]   187       0.33              0.28
+(0.4, 0.6]      373       0.50              0.43
+(0.6, 0.8]      411       0.70              0.57
+(0.8, 1.0]      799       0.94              0.74
+
+Saved model and reports to C:\Users\Kaleb\Downloads\New folder\RETROFIT_AI_PARTICIPANTS_2026\build\comparison\model_protocol

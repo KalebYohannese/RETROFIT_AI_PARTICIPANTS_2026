@@ -1,0 +1,21 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-08-01T23:59:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-01,2025-08-02T01:29:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current +9.5% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-01,2025-08-02T22:32:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"discharge_pressure_kpa: in-minute range x3.1 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-02,2025-07-07T05:57:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+31.8; 1x vibration x0.7,Inspect impeller for fouling; balance.
+STRESS-02,2025-07-07T17:57:00Z,MACHINE,MISALIGNMENT,0.7,"vibration_rms_mm_s z=+31.8, bearing_temp_c z=+7.3; 2x vibration x9.9; restart after 160 min stop",Check coupling alignment (likely after maintenance).
+STRESS-02,2025-07-08T02:34:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"motor_current_a: in-minute range x3.1 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of motor_current_a.
+STRESS-02,2025-07-08T13:55:00Z,MACHINE,MISALIGNMENT,0.7,"vibration_rms_mm_s z=+33.0, bearing_temp_c z=+7.0; 2x vibration x10.9; restart after 138 min stop",Check coupling alignment (likely after maintenance).
+STRESS-03,2025-06-01T19:07:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"suction_pressure_kpa in-minute spread z=28, all other channels calm (<5)",Check cabling / grounding of suction_pressure_kpa.
+STRESS-04,2025-12-21T02:22:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-12-21T11:33:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-10.7; head -5% power +7% vs reference,Inspect / clean suction strainer.
+STRESS-04,2025-12-21T16:21:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.13 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+STRESS-04,2025-12-21T18:21:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.07 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+STRESS-04,2025-12-21T22:11:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.91 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+STRESS-04,2025-12-21T22:25:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"vibration_accel_rms_g z=+39.9, suction_pressure_kpa z=-20.9; head -6% power +1% vs reference; sea state 0.0 m",Check sea-chest venting / basin level; air in suction.
+STRESS-05,2025-05-10T22:33:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-05,2025-05-11T10:12:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=47, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-06,2025-11-12T06:12:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-11-12T07:36:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current -10.7% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-06,2025-11-12T18:12:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.7; head factor 0.98 (+0% vs own normal); head -3% power +6% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-11-13T14:44:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-15.3, discharge_pressure_kpa z=-9.3; head factor 0.99 (-0% vs own normal); head -2% power +3% vs reference",Inspect / clean suction strainer.

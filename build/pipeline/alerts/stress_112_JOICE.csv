@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-20T19:35:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-03,2025-05-04T06:07:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-03,2025-05-05T11:31:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.3; head +1% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-04,2025-03-05T01:47:00Z,MACHINE,UNKNOWN,0.3,discharge_pressure_kpa z=-7.7; head +0% power +0% vs reference,Inspect pump; cause unclear.
+STRESS-04,2025-03-05T04:52:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-7.1; head -9% power +13% vs reference; head only 101% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-06T00:10:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-7.0; head -7% power +11% vs reference; head only 102% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-06T03:53:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-03-06T12:23:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-6.2; head -8% power +14% vs reference; head only 102% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-07T07:59:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-7.2; head -12% power +19% vs reference; head only 100% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-05,2025-04-17T05:47:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-8.9; head -4% power +6% vs reference,Inspect / clean suction strainer.
+STRESS-05,2025-04-17T20:00:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"suction_pressure_kpa in-minute spread z=51, all other channels calm (<5)",Check cabling / grounding of suction_pressure_kpa.
+STRESS-05,2025-04-18T00:51:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.9 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-05,2025-04-18T10:05:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.46 (healthy ~0.1, x3.5 vs start)",Plan bearing replacement; check lubrication.
+STRESS-06,2025-02-13T22:10:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-02-14T19:00:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.5; head -3% power +5% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-02-15T01:02:00Z,MACHINE,UNKNOWN,0.3,suction_pressure_kpa z=-7.7; head +3% power -3% vs reference,Inspect pump; cause unclear.
+STRESS-06,2025-02-15T18:20:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-6.2; head -8% power +11% vs reference; head only 100% of datasheet,Performance test; inspect impeller / wear rings.

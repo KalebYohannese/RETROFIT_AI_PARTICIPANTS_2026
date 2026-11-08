@@ -1,0 +1,15 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-10-19T09:23:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-8.2; head factor 0.98 (-0% vs own normal); head +1% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-01,2025-10-20T09:55:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.7,"valve_position_pct z=+19.2, motor_power_kw z=+16.1, motor_current_a z=+14.3; head factor 0.99 (+0% vs own normal); head -8% power +14% vs reference; control valve opening to hold flow while suction pressure falls",Inspect / clean suction strainer.
+STRESS-01,2025-10-20T12:59:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current +6.3% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-02,2025-09-08T07:34:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+7.5; head -3% power -4% vs reference,Inspect / clean suction strainer.
+STRESS-02,2025-09-08T21:23:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,"motor_speed_rpm z=+12.2, motor_power_kw z=+7.6; head -10% power -5% vs reference",Inspect / clean suction strainer.
+STRESS-02,2025-09-09T01:26:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_power_kw deviates alone (z=+6.1),Verify motor_power_kw against a reference gauge; recalibrate.
+STRESS-02,2025-09-09T09:43:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+11.4; head -15% power -8% vs reference,Inspect / clean suction strainer.
+STRESS-02,2025-09-09T16:32:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_power_kw deviates alone (z=+15.5),Verify motor_power_kw against a reference gauge; recalibrate.
+STRESS-03,2025-10-18T10:37:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-10-19T02:18:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-02-01T02:14:00Z,MACHINE,UNKNOWN,0.3,discharge_pressure_kpa z=-6.1; head -0% power -0% vs reference,Inspect pump; cause unclear.
+STRESS-04,2025-02-02T22:55:00Z,MACHINE,UNKNOWN,0.3,discharge_pressure_kpa z=+6.4; head +3% power -1% vs reference,Inspect pump; cause unclear.
+STRESS-04,2025-02-03T12:27:00Z,MACHINE,UNKNOWN,0.3,discharge_pressure_kpa z=+8.7; head +5% power +0% vs reference,Inspect pump; cause unclear.
+STRESS-05,2025-05-13T02:42:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-6.0; head +0% power +0% vs reference,Inspect pump; cause unclear.

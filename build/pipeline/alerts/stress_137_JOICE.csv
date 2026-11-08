@@ -1,0 +1,14 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-06-14T12:25:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=+6.2; head -4% power +5% vs reference,Inspect pump; cause unclear.
+STRESS-01,2025-06-14T19:26:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=+8.2, discharge_pressure_kpa z=-7.1; head +5% power -6% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-06-06T14:11:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-01-14T21:42:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-03,2025-01-15T12:14:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.51 (healthy ~0.1, x5.3 vs start)",Plan bearing replacement; check lubrication.
+STRESS-04,2025-02-09T05:47:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-02-09T09:30:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-02-10T00:40:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-05,2025-05-09T05:26:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+11.5, motor_current_a z=-10.8; head +3% power -2% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-05-09T22:47:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+11.8),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-05,2025-05-10T15:52:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+10.6),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-06,2025-11-13T02:52:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-11-14T02:38:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-7.5, discharge_pressure_kpa z=+6.4; head +1% power -3% vs reference",Check discharge valves and heat-exchanger fouling.

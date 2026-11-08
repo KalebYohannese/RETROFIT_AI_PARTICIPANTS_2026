@@ -1,0 +1,19 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-07-14T00:24:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=856, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-01,2025-07-14T19:56:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-01,2025-07-15T07:56:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=924, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-01,2025-07-15T22:51:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=866, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-01,2025-07-16T22:51:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=811, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-02,2025-07-03T04:14:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-02,2025-07-04T02:39:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=37, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-03,2025-02-13T16:43:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-07-10T17:26:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-07-12T03:10:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-04,2025-07-12T17:56:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=-7.0),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-05,2025-02-08T00:11:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=19, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-05,2025-02-08T01:12:00Z,MACHINE,UNKNOWN,0.3,; head -0% power -0% vs reference,Inspect pump; cause unclear.
+STRESS-06,2025-01-20T06:21:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,"motor_power_kw z=+9.7, motor_current_a z=+9.0, motor_speed_rpm z=+6.2; head -4% power +5% vs reference",Inspect / clean suction strainer.
+STRESS-06,2025-01-21T01:26:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current -4.8% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-06,2025-01-21T02:10:00Z,SENSOR,SENSOR_DRIFT,0.75,motor_current_a deviates alone (z=-6.6),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-01-21T09:24:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=-7.3; head -2% power +2% vs reference,Inspect pump; cause unclear.
+STRESS-06,2025-01-21T21:24:00Z,SENSOR,SENSOR_DRIFT,0.75,motor_current_a deviates alone (z=-15.7),Verify motor_current_a against a reference gauge; recalibrate.

@@ -1,0 +1,12 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-04T11:41:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.5; head +1% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-01,2025-11-04T22:14:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,discharge_pressure_kpa z=+6.2; head +2% power -2% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-03-19T22:17:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+9.4, motor_current_a z=-7.1; head +5% power -5% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-03-20T10:17:00Z,SENSOR,SENSOR_STUCK,0.9,suction_pressure_kpa frozen while pump running,Check transmitter suction_pressure_kpa.
+STRESS-02,2025-03-20T16:28:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.86 (healthy ~0.1, x8.9 vs start)",Plan bearing replacement; check lubrication.
+STRESS-03,2025-06-07T00:03:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.2; head factor 0.99 (-0% vs own normal); head +0% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-06-07T07:44:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"motor_current_a: in-minute range x3.2 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of motor_current_a.
+STRESS-03,2025-06-07T18:46:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-17.8, discharge_pressure_kpa z=-11.8, flow_m3_h z=-7.1; head factor 1.00 (-0% vs own normal); head +1% power -2% vs reference",Inspect / clean suction strainer.
+STRESS-04,2025-04-13T16:38:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.8; head +3% power -0% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-08-08T02:32:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-16.4, motor_power_kw z=-11.7, motor_current_a z=-11.1; head factor 1.02 (+0% vs own normal); head +2% power -3% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-08-08T14:32:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"flow_m3_h z=-30.6, motor_power_kw z=-20.6, motor_current_a z=-17.8; head factor 1.02 (-0% vs own normal); head +8% power -13% vs reference",Inspect / clean suction strainer.

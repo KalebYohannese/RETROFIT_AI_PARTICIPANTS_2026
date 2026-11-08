@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-20T20:16:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-01,2025-11-21T12:25:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-11.1, discharge_pressure_kpa z=+9.9; head +6% power -7% vs reference | ML agrees (0.59)",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-03-16T02:02:00Z,SENSOR,COMMUNICATION_LOSS,0.967741935483871,missing rows | ML agrees (0.97),Check gateway / network; data gap.
+STRESS-02,2025-03-16T04:18:00Z,MACHINE,MISALIGNMENT,0.7587548638132295,vibration_rms_mm_s z=+6.6; 2x vibration x3.5; restart after 104 min stop | ML agrees (0.76),Check coupling alignment (likely after maintenance).
+STRESS-02,2025-03-16T17:18:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+6.8; 2x vibration x3.3; restart after 104 min stop | ML agrees (0.70),Check coupling alignment (likely after maintenance).
+STRESS-02,2025-03-16T19:46:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8239795918367347,"suction_pressure_kpa: in-minute range x3.3 of normal in 5 of last 15 min, other channels normal | ML agrees (0.82)",Check cabling / grounding of suction_pressure_kpa.
+STRESS-02,2025-03-17T06:07:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+7.9; 2x vibration x3.5; restart after 136 min stop | ML agrees (0.59),Check coupling alignment (likely after maintenance).
+STRESS-03,2025-01-14T09:18:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8239795918367347,"motor_current_a in-minute spread z=18, all other channels calm (<5) | ML agrees (0.82)",Check cabling / grounding of motor_current_a.
+STRESS-03,2025-01-14T18:40:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-03,2025-01-15T16:30:00Z,MACHINE,DISCHARGE_RESTRICTION,0.8153153153153153,"discharge_pressure_kpa z=+10.9, motor_current_a z=-10.8; head +2% power -4% vs reference | ML agrees (0.82)",Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-01-16T15:20:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-13.9, discharge_pressure_kpa z=+12.9; head +7% power -8% vs reference | ML agrees (0.62)",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-08-06T17:15:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+7.4, motor_current_a z=-7.2; head +6% power -6% vs reference | ML agrees (0.70)",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-08-07T17:15:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+8.3, motor_current_a z=-7.4; head +1% power -0% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-03-10T10:14:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+12.0, motor_current_a z=-9.8; head +3% power -2% vs reference | ML agrees (0.59)",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-03-11T09:04:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+16.8, motor_current_a z=-16.2; head +9% power -9% vs reference | ML agrees (0.59)",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-07-20T06:00:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-06,2025-07-21T05:30:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=-8.0) | ML agrees (0.65),Verify discharge_pressure_kpa against a reference gauge; recalibrate.

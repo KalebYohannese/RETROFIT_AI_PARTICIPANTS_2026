@@ -1,0 +1,17 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-10-03T16:47:00Z,SENSOR,SENSOR_STUCK,0.08850217858950298,B1 mode-aware z: suction_pressure_kpa frozen,Check transmitter suction_pressure_kpa.
+STRESS-02,2025-07-16T15:43:00Z,SENSOR,SENSOR_STUCK,0.20609450340270996,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-02,2025-07-18T16:58:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: suction_pressure_kpa z=-13.9, discharge_pressure_kpa z=-6.9",Inspect / clean suction strainer.
+STRESS-03,2025-07-01T18:59:00Z,SENSOR,SENSOR_STUCK,0.22446566820144653,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-03,2025-07-02T08:44:00Z,SENSOR,SENSOR_STUCK,0.16186323761940002,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-03,2025-07-03T13:41:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: flow_m3_h deviates alone (z=6.4),Verify flow_m3_h against a reference gauge.
+STRESS-04,2025-08-11T17:52:00Z,MACHINE,UNKNOWN,0.5118574301401774,B1 mode-aware z: bearing_temp_c z=-6.1,Inspect pump.
+STRESS-04,2025-08-12T06:37:00Z,MACHINE,UNKNOWN,0.5422435601552328,B1 mode-aware z: bearing_temp_c z=-6.5,Inspect pump.
+STRESS-04,2025-08-12T19:50:00Z,MACHINE,UNKNOWN,0.686756451924642,B1 mode-aware z: bearing_temp_c z=-8.2,Inspect pump.
+STRESS-04,2025-08-13T12:58:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5863701105117798,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=7.0),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-04,2025-08-13T17:02:00Z,MACHINE,IMBALANCE,0.7507062753041586,B1 mode-aware z: vibration_rms_mm_s z=+9.0,Inspect impeller for fouling / damage; balance.
+STRESS-05,2025-01-16T19:42:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-05,2025-01-17T19:05:00Z,MACHINE,UNKNOWN,0.6464078426361084,B1 mode-aware z: motor_current_a z=-7.8,Inspect pump.
+STRESS-05,2025-01-18T09:11:00Z,MACHINE,DISCHARGE_RESTRICTION,0.99,"B1 mode-aware z: motor_current_a z=-13.4, discharge_pressure_kpa z=+10.8",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-04-11T17:32:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-06,2025-04-11T23:26:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.

@@ -1,0 +1,14 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-02-04T17:31:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-01,2025-02-05T06:41:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,bearing_temp_c deviates alone (z=-32.8),Verify bearing_temp_c against a reference gauge; recalibrate.
+STRESS-01,2025-02-05T18:41:00Z,SENSOR,SENSOR_DRIFT,0.75,bearing_temp_c deviates alone (z=-32.8),Verify bearing_temp_c against a reference gauge; recalibrate.
+STRESS-01,2025-02-06T06:41:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,bearing_temp_c deviates alone (z=-34.9),Verify bearing_temp_c against a reference gauge; recalibrate.
+STRESS-01,2025-02-06T18:41:00Z,SENSOR,SENSOR_DRIFT,0.75,bearing_temp_c deviates alone (z=-35.1),Verify bearing_temp_c against a reference gauge; recalibrate.
+STRESS-03,2025-03-06T12:06:00Z,MACHINE,UNKNOWN,0.3,; head -0% power -1% vs reference,Inspect pump; cause unclear.
+STRESS-03,2025-03-06T13:35:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=15, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-04,2025-03-15T11:07:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-04,2025-03-17T01:57:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,motor_current_a z=-6.1; head +3% power -4% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-02-14T02:08:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-06,2025-09-21T01:30:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-09-21T03:01:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,flow_m3_h z=-7.5; head factor 0.99 (+0% vs own normal); head +3% power -4% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-09-21T15:01:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+37.3, flow_m3_h z=-11.6, motor_power_kw z=-6.7; bearing-defect index 0.21 (healthy ~0.1), crest z=+37.3",Plan bearing replacement; check lubrication.

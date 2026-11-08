@@ -1,0 +1,20 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-03-05T11:21:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-01,2025-03-05T22:13:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.7869055271148682,"B1 mode-aware z: vibration_crest_factor z=+9.4, suction_pressure_kpa z=-6.2",Inspect / clean suction strainer.
+STRESS-02,2025-04-04T06:22:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.8298611640930176,"B1 mode-aware z: motor_power_kw z=+10.0, motor_speed_rpm z=+8.2, motor_current_a z=+6.3",Inspect / clean suction strainer.
+STRESS-03,2025-11-15T10:11:00Z,MACHINE,UNKNOWN,0.5566461881001791,B1 mode-aware z: bearing_temp_c z=-6.7,Inspect pump.
+STRESS-03,2025-11-16T00:37:00Z,MACHINE,UNKNOWN,0.6486628850301107,B1 mode-aware z: bearing_temp_c z=-7.8,Inspect pump.
+STRESS-03,2025-11-16T10:07:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.99,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=26.2),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-03,2025-11-16T11:31:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-03,2025-11-16T12:58:00Z,MACHINE,MISALIGNMENT,0.99,"B1 mode-aware z: vibration_rms_mm_s z=+27.2, bearing_temp_c z=+7.2",Check coupling alignment.
+STRESS-03,2025-11-16T18:03:00Z,MACHINE,IMBALANCE,0.99,B1 mode-aware z: vibration_rms_mm_s z=+28.4,Inspect impeller for fouling / damage; balance.
+STRESS-03,2025-11-17T15:53:00Z,MACHINE,UNKNOWN,0.5129132270812988,B1 mode-aware z: bearing_temp_c z=-6.2,Inspect pump.
+STRESS-04,2025-03-13T10:22:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-05,2025-12-16T06:17:00Z,MACHINE,UNKNOWN,0.6213371356328329,B1 mode-aware z: fluid_temp_c z=-7.5,Inspect pump.
+STRESS-05,2025-12-17T00:06:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.6157506306966146,B1 mode-aware z: suction_pressure_kpa z=-7.4,Inspect / clean suction strainer.
+STRESS-05,2025-12-17T22:46:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: suction_pressure_kpa z=-37.9, discharge_pressure_kpa z=-20.9",Inspect / clean suction strainer.
+STRESS-06,2025-11-11T08:46:00Z,SENSOR,SENSOR_STUCK,0.18854443232218424,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-06,2025-11-11T23:21:00Z,MACHINE,UNKNOWN,0.7612553437550863,B1 mode-aware z: motor_current_a z=+9.1,Inspect pump.
+STRESS-06,2025-11-12T11:56:00Z,MACHINE,UNKNOWN,0.5923648675282797,B1 mode-aware z: motor_current_a z=+7.1,Inspect pump.
+STRESS-06,2025-11-13T04:01:00Z,MACHINE,UNKNOWN,0.7175769805908203,B1 mode-aware z: motor_current_a z=+8.6,Inspect pump.
+STRESS-06,2025-11-13T16:07:00Z,MACHINE,UNKNOWN,0.6826337178548177,B1 mode-aware z: motor_current_a z=+8.2,Inspect pump.

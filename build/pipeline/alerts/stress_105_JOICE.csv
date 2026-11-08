@@ -1,0 +1,16 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-08-04T07:14:00Z,SENSOR,SENSOR_STUCK,0.9,bearing_temp_c frozen while pump running,Check transmitter bearing_temp_c.
+STRESS-01,2025-08-04T14:05:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+6.7; 2x vibration x1.2; restart after 158 min stop,Check coupling alignment (likely after maintenance).
+STRESS-01,2025-08-05T04:24:00Z,MACHINE,MISALIGNMENT,0.7,"vibration_rms_mm_s z=+18.0, bearing_temp_c z=+11.0; 2x vibration x1.4; restart after 158 min stop",Check coupling alignment (likely after maintenance).
+STRESS-01,2025-08-05T16:24:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+40.2, vibration_rms_mm_s z=+34.4, bearing_temp_c z=+14.6; bearing-defect index 0.18 (healthy ~0.1), crest z=+40.2",Plan bearing replacement; check lubrication.
+STRESS-02,2025-05-04T00:57:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=40, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-03,2025-02-08T23:38:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-11.8, discharge_pressure_kpa z=+7.6; head +6% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-02-09T18:53:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+13.0, motor_current_a z=-12.0; head +6% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-19T12:22:00Z,SENSOR,SENSOR_STUCK,0.9,suction_pressure_kpa frozen while pump running,Check transmitter suction_pressure_kpa.
+STRESS-04,2025-10-20T07:05:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-10-21T01:04:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.46 (healthy ~0.1, x4.0 vs start)",Plan bearing replacement; check lubrication.
+STRESS-05,2025-07-07T04:53:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+19.1; 2x vibration x0.9; restart after 193 min stop,Check coupling alignment (likely after maintenance).
+STRESS-05,2025-07-07T15:03:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"suction_pressure_kpa: in-minute range x2.5 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of suction_pressure_kpa.
+STRESS-05,2025-07-08T11:34:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"suction_pressure_kpa: in-minute range x1.5 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of suction_pressure_kpa.
+STRESS-05,2025-07-08T11:58:00Z,MACHINE,MISALIGNMENT,0.7,"vibration_rms_mm_s z=+19.1, suction_pressure_kpa z=-9.6; 2x vibration x5.5; restart after 1084 min stop",Check coupling alignment (likely after maintenance).
+STRESS-06,2025-04-09T05:05:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"motor_current_a: in-minute range x8.1 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of motor_current_a.

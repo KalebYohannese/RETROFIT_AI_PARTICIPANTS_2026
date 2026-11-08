@@ -1,0 +1,12 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-04-02T20:32:00Z,SENSOR,SENSOR_STUCK,0.10492812593777974,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-02,2025-12-14T13:41:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-03,2025-07-16T12:09:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-04,2025-11-11T06:17:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-14.2),Verify motor_winding_temp_c against a reference gauge.
+STRESS-04,2025-11-11T22:21:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5483712752660116,B1 mode-aware z: motor_winding_temp_c deviates alone (z=6.1),Verify motor_winding_temp_c against a reference gauge.
+STRESS-04,2025-11-12T19:40:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.6432587703069051,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=7.7),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-04,2025-11-12T21:34:00Z,MACHINE,IMBALANCE,0.6150894562403361,B1 mode-aware z: vibration_rms_mm_s z=+7.4,Inspect impeller for fouling / damage; balance.
+STRESS-04,2025-11-13T15:31:00Z,MACHINE,UNKNOWN,0.99,"B1 mode-aware z: motor_winding_temp_c z=-35.9, bearing_temp_c z=-13.3",Inspect pump.
+STRESS-05,2025-03-10T19:53:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-06,2025-09-10T22:33:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6725069681803385,B1 mode-aware z: discharge_pressure_kpa z=+7.4,Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-09-11T15:05:00Z,MACHINE,DISCHARGE_RESTRICTION,0.9294446309407552,"B1 mode-aware z: discharge_pressure_kpa z=+11.2, motor_current_a z=-8.6",Check discharge valves and heat-exchanger fouling.

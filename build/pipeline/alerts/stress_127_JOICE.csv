@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-02-07T12:01:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +4.2% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+STRESS-01,2025-02-07T22:22:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,fluid_temp_c z=+6.1; head +1% power -2% vs reference,Inspect / clean suction strainer.
+STRESS-01,2025-02-08T11:55:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,fluid_temp_c z=+9.0; head +8% power -12% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-02-09T10:46:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"fluid_temp_c z=+7.2, motor_speed_rpm z=-6.0; head +5% power -13% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-04-11T16:37:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-04-12T05:22:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-04-12T19:45:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-04-13T11:40:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-05-05T14:25:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 1.21 (healthy ~0.1, x10.4 vs start)",Plan bearing replacement; check lubrication.
+STRESS-04,2025-03-18T04:57:00Z,SENSOR,SENSOR_DRIFT,0.75,motor_current_a deviates alone (z=-6.5),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-03-18T12:19:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-15.3),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-03-19T04:12:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-48.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-03-19T16:12:00Z,SENSOR,SENSOR_DRIFT,0.75,motor_current_a deviates alone (z=-67.3),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-05,2025-12-07T15:54:00Z,MACHINE,AIR_ENTRAINMENT,0.6,suction_pressure_kpa z=-6.9; head factor 0.99 (+0% vs own normal); head +0% power -0% vs reference; sea state 1.2 m,Check sea-chest venting / basin level; air in suction.
+STRESS-05,2025-12-08T14:44:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"suction_pressure_kpa z=-25.5, discharge_pressure_kpa z=-11.3; head factor 0.99 (-0% vs own normal); head +1% power -2% vs reference; sea state 1.8 m",Check sea-chest venting / basin level; air in suction.
+STRESS-06,2025-03-06T15:10:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-03-07T23:09:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+8.4; 1x vibration x2.6,Inspect impeller for fouling; balance.

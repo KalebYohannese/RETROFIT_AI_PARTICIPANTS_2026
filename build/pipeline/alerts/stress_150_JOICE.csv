@@ -1,0 +1,11 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-10-15T20:15:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=-6.3),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-01,2025-10-16T08:15:00Z,SENSOR,SENSOR_DRIFT,0.75,discharge_pressure_kpa deviates alone (z=-16.0),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-04,2025-10-04T02:08:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.1; head +0% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-04,2025-10-04T15:25:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-13.5, discharge_pressure_kpa z=-12.9; head -0% power -2% vs reference",Inspect / clean suction strainer.
+STRESS-04,2025-10-05T15:25:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-16.2, discharge_pressure_kpa z=-14.7, motor_current_a z=-11.5; head +0% power -6% vs reference",Inspect / clean suction strainer.
+STRESS-05,2025-02-15T01:31:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=18, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-05,2025-02-15T23:57:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-05,2025-02-16T05:03:00Z,MACHINE,IMPELLER_WEAR,0.5,discharge_pressure_kpa z=-6.5; head -5% power -2% vs reference,Performance test; inspect impeller / wear rings.
+STRESS-06,2025-09-05T03:28:00Z,SENSOR,SENSOR_DRIFT,0.65,"bearing temp +23.1 C above its normal offset to the water, but vibration and bearing index normal",Verify bearing temperature sensor.
+STRESS-06,2025-09-05T21:14:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.2 h while running (healthy < 1 h),Check wireless sensor / battery.

@@ -1,0 +1,17 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-08-15T17:14:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+24.6; bearing-defect index 0.11 (healthy ~0.1), crest z=+24.6",Plan bearing replacement; check lubrication.
+STRESS-01,2025-08-16T18:02:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-22.1, motor_power_kw z=-13.9, motor_current_a z=-8.7; head factor 0.99 (-0% vs own normal); head +4% power -6% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-08-17T18:02:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-24.0, motor_power_kw z=-15.3, discharge_pressure_kpa z=+9.9; head factor 0.99 (-0% vs own normal); head +2% power -3% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-01-02T21:52:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-02,2025-01-03T10:16:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=16, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-03,2025-05-12T08:40:00Z,MACHINE,UNKNOWN,0.3,suction_pressure_kpa z=-6.0; head +2% power -5% vs reference,Inspect pump; cause unclear.
+STRESS-03,2025-05-12T08:57:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-7.6; head +2% power -4% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-05-12T21:20:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-7.0; head -0% power +0% vs reference,Inspect / clean suction strainer.
+STRESS-04,2025-04-20T00:03:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+13.9, motor_current_a z=-12.6; head +8% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-04-20T12:03:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=55, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-05,2025-05-08T17:07:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+23.2; 1x vibration x0.8,Inspect impeller for fouling; balance.
+STRESS-05,2025-05-08T19:03:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+27.5; 2x vibration x11.9; restart after 79 min stop,Check coupling alignment (likely after maintenance).
+STRESS-05,2025-05-09T09:04:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+29.8; 2x vibration x12.3; restart after 36 min stop,Check coupling alignment (likely after maintenance).
+STRESS-06,2025-01-14T13:56:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-01-15T14:00:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-01-16T14:00:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-11.4, discharge_pressure_kpa z=+9.8, motor_power_kw z=-7.6; head factor 1.02 (-0% vs own normal); head +4% power -6% vs reference",Check discharge valves and heat-exchanger fouling.

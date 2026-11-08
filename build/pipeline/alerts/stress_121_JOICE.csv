@@ -1,0 +1,20 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-02,2025-11-04T13:30:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+7.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-02,2025-11-04T17:40:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,motor_current_a z=+6.1; head factor 1.01 (+0% vs own normal); head +8% power -16% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-11-05T01:57:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+6.5),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-02,2025-11-05T14:27:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+36.5, motor_current_a z=+6.2; bearing-defect index 0.25 (healthy ~0.1), crest z=+36.5",Plan bearing replacement; check lubrication.
+STRESS-02,2025-11-05T16:54:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+7.6),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-02,2025-11-06T02:56:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+60.5, vibration_accel_rms_g z=+10.8; bearing-defect index 2.20 (healthy ~0.1), crest z=+60.5",Plan bearing replacement; check lubrication.
+STRESS-02,2025-11-06T17:38:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+43.9, vibration_accel_rms_g z=+38.2; bearing-defect index 3.70 (healthy ~0.1), crest z=+43.9",Plan bearing replacement; check lubrication.
+STRESS-03,2025-02-04T13:31:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"discharge_pressure_kpa: in-minute range x3.7 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-04,2025-12-03T18:46:00Z,MACHINE,IMPELLER_WEAR,0.5,discharge_pressure_kpa z=-6.2; head -5% power -2% vs reference,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-12-03T23:21:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-04,2025-12-04T12:55:00Z,SENSOR,SENSOR_DRIFT,0.75,discharge_pressure_kpa deviates alone (z=-22.1),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-04,2025-12-04T18:06:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=-25.0),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-05,2025-05-16T11:46:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-7.0),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-05,2025-05-17T02:31:00Z,MACHINE,IMBALANCE,0.65,motor_current_a z=-14.0; 1x vibration x3.8,Inspect impeller for fouling; balance.
+STRESS-05,2025-05-17T14:31:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-19.7, discharge_pressure_kpa z=+6.5; head +4% power -20% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-02-06T10:08:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-02-06T13:13:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 3.4 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-06,2025-02-07T20:27:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.1; head +1% power -2% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-02-08T18:09:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-16.6, discharge_pressure_kpa z=-12.3, motor_current_a z=-6.7; head +3% power -4% vs reference",Inspect / clean suction strainer.

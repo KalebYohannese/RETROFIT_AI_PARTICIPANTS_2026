@@ -1,0 +1,20 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-01-06T00:15:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,"motor_power_kw z=+8.4, motor_current_a z=+6.8; head -2% power +3% vs reference",Inspect / clean suction strainer.
+STRESS-01,2025-01-06T07:35:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current +7.0% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-01,2025-01-06T16:11:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"motor_power_kw z=+25.1, motor_current_a z=+20.1, motor_speed_rpm z=+12.2; head -8% power +15% vs reference",Inspect / clean suction strainer.
+STRESS-01,2025-01-06T23:28:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.30 (healthy ~0.1, x3.4 vs start)",Plan bearing replacement; check lubrication.
+STRESS-01,2025-01-07T17:58:00Z,MACHINE,BEARING_WEAR,0.85,"motor_power_kw z=+22.8, motor_current_a z=+17.6, motor_speed_rpm z=+10.9; bearing-defect index 2.39 (healthy ~0.1), crest z=+0.0",Plan bearing replacement; check lubrication.
+STRESS-02,2025-08-18T17:11:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.0 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-03,2025-05-16T00:47:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-7.6; head -0% power -0% vs reference,Inspect pump; cause unclear.
+STRESS-03,2025-05-17T04:16:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-7.0; head -4% power -2% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-05-17T17:15:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-12.0, discharge_pressure_kpa z=-6.6; head -6% power -4% vs reference",Inspect / clean suction strainer.
+STRESS-04,2025-07-05T10:01:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-07-05T12:49:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 3.2 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-04,2025-07-06T12:16:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-42.3),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-07-07T01:46:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"discharge_pressure_kpa: in-minute range x4.2 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-04,2025-07-07T12:06:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-43.3),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-05,2025-07-11T10:59:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-05,2025-07-11T14:01:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 3.4 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-05,2025-07-12T02:57:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-12.3, discharge_pressure_kpa z=+10.1; head +3% power -3% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-07-12T19:05:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-15.0, discharge_pressure_kpa z=+14.9; head +8% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-06-16T23:59:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.

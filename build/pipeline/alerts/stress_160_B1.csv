@@ -1,0 +1,22 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-07-17T12:14:00Z,SENSOR,SENSOR_STUCK,0.20877405007680258,B1 mode-aware z: suction_pressure_kpa frozen,Check transmitter suction_pressure_kpa.
+STRESS-01,2025-07-17T20:16:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5103949308395386,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=6.1),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-01,2025-07-18T00:53:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5974464416503906,B1 mode-aware z: suction_pressure_kpa z=-7.2,Inspect / clean suction strainer.
+STRESS-02,2025-05-18T15:32:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7269075711568197,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-8.7),Verify motor_winding_temp_c against a reference gauge.
+STRESS-02,2025-05-19T01:01:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5128580729166666,B1 mode-aware z: motor_speed_rpm z=+6.2,Inspect / clean suction strainer.
+STRESS-02,2025-05-19T18:28:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.9826365311940511,B1 mode-aware z: motor_speed_rpm z=+11.8,Inspect / clean suction strainer.
+STRESS-02,2025-05-19T20:06:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5712776184082031,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-6.3),Verify motor_winding_temp_c against a reference gauge.
+STRESS-03,2025-03-08T11:51:00Z,MACHINE,DISCHARGE_RESTRICTION,0.99,"B1 mode-aware z: fluid_temp_c z=+13.2, discharge_pressure_kpa z=+8.8, motor_speed_rpm z=-6.1",Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-03-09T10:04:00Z,MACHINE,UNKNOWN,0.7311607996622721,B1 mode-aware z: fluid_temp_c z=+8.8,Inspect pump.
+STRESS-04,2025-10-15T08:33:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: bearing_temp_c deviates alone (z=-20.1),Verify bearing_temp_c against a reference gauge.
+STRESS-04,2025-10-15T19:13:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-04,2025-10-15T22:46:00Z,MACHINE,DISCHARGE_RESTRICTION,0.9099998474121094,"B1 mode-aware z: flow_m3_h z=-10.9, motor_power_kw z=-7.8",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-16T13:42:00Z,MACHINE,DISCHARGE_RESTRICTION,0.99,"B1 mode-aware z: bearing_temp_c z=-26.4, flow_m3_h z=-25.4, motor_power_kw z=-16.3",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-17T13:42:00Z,MACHINE,DISCHARGE_RESTRICTION,0.99,"B1 mode-aware z: flow_m3_h z=-35.6, motor_power_kw z=-22.9, discharge_pressure_kpa z=+12.7",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-01-19T14:27:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-13.1),Verify motor_winding_temp_c against a reference gauge.
+STRESS-05,2025-01-19T16:03:00Z,SENSOR,SENSOR_STUCK,0.09284083048502605,B1 mode-aware z: discharge_pressure_kpa frozen,Check transmitter discharge_pressure_kpa.
+STRESS-05,2025-01-20T09:04:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5253487030665079,B1 mode-aware z: suction_pressure_kpa z=-6.3,Inspect / clean suction strainer.
+STRESS-05,2025-01-21T10:37:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-14.5),Verify motor_winding_temp_c against a reference gauge.
+STRESS-06,2025-03-10T02:57:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-06,2025-03-10T22:39:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.6728124618530273,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=-8.1),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-06,2025-03-11T13:03:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5169443686803182,B1 mode-aware z: motor_speed_rpm z=+6.2,Inspect / clean suction strainer.

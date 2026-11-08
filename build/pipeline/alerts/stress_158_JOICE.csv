@@ -1,0 +1,15 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-10-08T00:47:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+21.8),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-01,2025-10-08T12:47:00Z,MACHINE,UNKNOWN,0.3,"discharge_pressure_kpa z=+14.4, motor_current_a z=+10.2; head +12% power +7% vs reference",Inspect pump; cause unclear.
+STRESS-01,2025-10-08T19:33:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+21.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-02,2025-06-10T00:35:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-02,2025-06-10T10:34:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-9.1),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-02-14T03:20:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-02-15T08:35:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.43 (healthy ~0.1, x3.4 vs start)",Plan bearing replacement; check lubrication.
+STRESS-05,2025-04-17T18:16:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-05,2025-04-17T21:29:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 4.0 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-05,2025-04-19T00:03:00Z,MACHINE,UNKNOWN,0.3,discharge_pressure_kpa z=+6.2; head +4% power -0% vs reference,Inspect pump; cause unclear.
+STRESS-05,2025-04-19T13:52:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+12.2),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-06,2025-01-04T10:11:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-01-05T21:52:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.6; head +0% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-01-06T12:34:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-23.2, discharge_pressure_kpa z=-11.7; head +2% power -2% vs reference",Inspect / clean suction strainer.

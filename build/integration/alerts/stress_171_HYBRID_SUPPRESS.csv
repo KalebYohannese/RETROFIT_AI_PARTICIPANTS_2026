@@ -1,0 +1,13 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-12-10T04:39:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +5.0% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+STRESS-03,2025-05-13T08:51:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-03,2025-05-13T12:21:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 3.9 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-03,2025-05-13T14:03:00Z,MACHINE,UNKNOWN,0.3,"motor_power_kw z=-6.9, motor_current_a z=-6.4; head +2% power -2% vs reference",Inspect pump; cause unclear.
+STRESS-04,2025-07-06T15:49:00Z,MACHINE,MISALIGNMENT,0.864321608040201,vibration_rms_mm_s z=+15.7; 2x vibration x7.8; restart after 544 min stop | ML agrees (0.86),Check coupling alignment (likely after maintenance).
+STRESS-04,2025-07-07T01:11:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+40.3, vibration_rms_mm_s z=+7.2; bearing-defect index 0.18 (healthy ~0.1), crest z=+40.3",Plan bearing replacement; check lubrication.
+STRESS-05,2025-12-09T18:09:00Z,SENSOR,COMMUNICATION_LOSS,1.0,missing rows | ML agrees (1.00),Check gateway / network; data gap.
+STRESS-05,2025-12-11T02:28:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8928571428571429,"flow_m3_h in-minute spread z=51, all other channels calm (<5) | ML agrees (0.89)",Check cabling / grounding of flow_m3_h.
+STRESS-05,2025-12-11T17:50:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+7.6; 1x vibration x4.4,Inspect impeller for fouling; balance.
+STRESS-06,2025-02-03T00:24:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-13.1),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-02-03T22:07:00Z,MACHINE,BEARING_WEAR,0.8239795918367347,"bearing-defect index 0.66 (healthy ~0.1, x5.7 vs start) | ML agrees (0.82)",Plan bearing replacement; check lubrication.
+STRESS-06,2025-02-05T16:40:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-12.5),Verify motor_current_a against a reference gauge; recalibrate.

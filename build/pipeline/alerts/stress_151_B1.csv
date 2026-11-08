@@ -1,0 +1,14 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-12T04:35:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-01,2025-11-12T23:06:00Z,SENSOR,SENSOR_STUCK,0.99,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-01,2025-11-13T14:26:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.8773822784423828,B1 mode-aware z: motor_current_a deviates alone (z=-10.5),Verify motor_current_a against a reference gauge.
+STRESS-02,2025-04-15T12:33:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-02,2025-04-15T18:12:00Z,SENSOR,SENSOR_STUCK,0.1832852562268575,B1 mode-aware z: suction_pressure_kpa frozen,Check transmitter suction_pressure_kpa.
+STRESS-03,2025-08-14T03:22:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-03,2025-08-15T20:57:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5225240389506022,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=-6.3),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-04,2025-12-10T11:46:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-05,2025-08-11T08:42:00Z,SENSOR,SENSOR_STUCK,0.06090250611305237,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-06,2025-04-16T09:53:00Z,MACHINE,UNKNOWN,0.640409787495931,B1 mode-aware z: ,Inspect pump.
+STRESS-06,2025-04-16T17:20:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.7412503560384115,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=8.9),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-06,2025-04-17T05:20:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5656944910685221,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=6.8),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-06,2025-04-17T23:45:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7652784983317057,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=9.2),Verify discharge_pressure_kpa against a reference gauge.

@@ -1,0 +1,15 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-02,2025-01-02T14:45:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.1; head +0% power -2% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-06-15T19:31:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,flow_m3_h z=-7.6; head factor 1.00 (-0% vs own normal); head +1% power -2% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-06-16T06:01:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"flow_m3_h z=-22.1, motor_power_kw z=-9.3; head factor 1.00 (+0% vs own normal); head +3% power -4% vs reference; sea state 1.1 m",Check sea-chest venting / basin level; air in suction.
+STRESS-03,2025-06-16T18:01:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-32.4, motor_power_kw z=-13.4, discharge_pressure_kpa z=+7.0; head factor 1.00 (+0% vs own normal); head +4% power -5% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-12-02T20:57:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+9.1; bearing-defect index 0.07 (healthy ~0.1), crest z=+9.1",Plan bearing replacement; check lubrication.
+STRESS-04,2025-12-03T20:57:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"vibration_accel_rms_g in-minute spread z=18, all other channels calm (<5)",Check cabling / grounding of vibration_accel_rms_g.
+STRESS-04,2025-12-04T06:14:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_accel_rms_g z=+60.5, vibration_crest_factor z=+29.7, vibration_rms_mm_s z=+20.9; bearing-defect index 3.73 (healthy ~0.1), crest z=+29.7",Plan bearing replacement; check lubrication.
+STRESS-05,2025-01-15T13:17:00Z,SENSOR,SENSOR_STUCK,0.9,suction_pressure_kpa frozen while pump running,Check transmitter suction_pressure_kpa.
+STRESS-05,2025-01-16T13:17:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"suction_pressure_kpa z=+10.6, motor_current_a z=-7.8, discharge_pressure_kpa z=+6.8; head +1% power -5% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-01-17T14:26:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.82 (healthy ~0.1, x7.8 vs start)",Plan bearing replacement; check lubrication.
+STRESS-06,2025-03-20T04:35:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_speed_rpm z=+13.8, discharge_pressure_kpa z=+7.6; head +6% power -6% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-06,2025-03-20T06:25:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current -4.6% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-06,2025-03-21T02:28:00Z,MACHINE,IMBALANCE,0.65,"motor_speed_rpm z=+25.9, discharge_pressure_kpa z=+13.8, motor_power_kw z=+6.8; 1x vibration x1.3",Inspect impeller for fouling; balance.
+STRESS-06,2025-03-21T17:12:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"motor_speed_rpm z=+25.9, discharge_pressure_kpa z=+14.2, motor_power_kw z=+6.6; head +15% power -16% vs reference",Inspect / clean suction strainer.

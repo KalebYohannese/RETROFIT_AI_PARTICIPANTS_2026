@@ -1,0 +1,16 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-19T10:56:00Z,SENSOR,SENSOR_STUCK,0.165069580078125,B1 mode-aware z: discharge_pressure_kpa frozen,Check transmitter discharge_pressure_kpa.
+STRESS-01,2025-11-20T00:16:00Z,SENSOR,SENSOR_STUCK,0.165069580078125,B1 mode-aware z: discharge_pressure_kpa frozen,Check transmitter discharge_pressure_kpa.
+STRESS-01,2025-11-20T05:35:00Z,MACHINE,IMPELLER_WEAR,0.520416259765625,B1 mode-aware z: discharge_pressure_kpa z=-6.2,Performance test; inspect impeller / wear rings.
+STRESS-01,2025-11-21T05:35:00Z,MACHINE,IMPELLER_WEAR,0.99,"B1 mode-aware z: motor_current_a z=-30.6, discharge_pressure_kpa z=-13.6",Performance test; inspect impeller / wear rings.
+STRESS-02,2025-05-01T22:13:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-02,2025-05-02T13:23:00Z,MACHINE,UNKNOWN,0.7702407836914062,"B1 mode-aware z: motor_current_a z=-9.2, motor_power_kw z=-8.9",Inspect pump.
+STRESS-02,2025-05-03T02:26:00Z,MACHINE,UNKNOWN,0.5589447816212972,"B1 mode-aware z: motor_speed_rpm z=-6.7, motor_power_kw z=-6.5",Inspect pump.
+STRESS-02,2025-05-03T22:44:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.9092214902242025,"B1 mode-aware z: suction_pressure_kpa z=-10.9, bearing_temp_c z=-10.8, motor_speed_rpm z=-8.6",Inspect / clean suction strainer.
+STRESS-03,2025-03-08T08:00:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-03,2025-03-09T20:59:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7810852527618408,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-9.4),Verify motor_winding_temp_c against a reference gauge.
+STRESS-03,2025-03-10T18:28:00Z,MACHINE,UNKNOWN,0.7406942049662272,B1 mode-aware z: vibration_crest_factor z=+8.9,Inspect pump.
+STRESS-04,2025-10-12T06:32:00Z,MACHINE,UNKNOWN,0.542129635810852,"B1 mode-aware z: motor_current_a z=+6.5, discharge_pressure_kpa z=-6.1",Inspect pump.
+STRESS-04,2025-10-12T21:48:00Z,MACHINE,UNKNOWN,0.5307459036509196,B1 mode-aware z: discharge_pressure_kpa z=-6.4,Inspect pump.
+STRESS-05,2025-01-14T05:59:00Z,SENSOR,SENSOR_STUCK,0.24480368693669638,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-06,2025-05-05T14:35:00Z,SENSOR,SENSOR_STUCK,0.24117006858189902,B1 mode-aware z: suction_pressure_kpa frozen,Check transmitter suction_pressure_kpa.

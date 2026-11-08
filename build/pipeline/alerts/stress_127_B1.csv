@@ -1,0 +1,17 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-02-07T22:22:00Z,MACHINE,UNKNOWN,0.5113424062728882,B1 mode-aware z: fluid_temp_c z=+6.1,Inspect pump.
+STRESS-01,2025-02-08T10:52:00Z,MACHINE,UNKNOWN,0.535879373550415,B1 mode-aware z: fluid_temp_c z=+6.4,Inspect pump.
+STRESS-01,2025-02-09T10:46:00Z,MACHINE,UNKNOWN,0.5974538723627726,"B1 mode-aware z: fluid_temp_c z=+7.2, motor_speed_rpm z=-6.0",Inspect pump.
+STRESS-02,2025-04-11T16:37:00Z,SENSOR,SENSOR_STUCK,0.49016745885213214,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-02,2025-04-12T05:22:00Z,SENSOR,SENSOR_STUCK,0.49016745885213214,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-02,2025-04-12T19:45:00Z,SENSOR,SENSOR_STUCK,0.49016745885213214,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-02,2025-04-13T11:40:00Z,SENSOR,SENSOR_STUCK,0.49016745885213214,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-04,2025-03-18T04:57:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5436156590779623,B1 mode-aware z: motor_current_a deviates alone (z=-6.5),Verify motor_current_a against a reference gauge.
+STRESS-04,2025-03-19T04:12:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: motor_current_a z=-48.4,Inspect pump.
+STRESS-04,2025-03-19T16:12:00Z,MACHINE,DISCHARGE_RESTRICTION,0.99,"B1 mode-aware z: motor_current_a z=-67.3, discharge_pressure_kpa z=+6.4",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-12-07T03:55:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-52.1),Verify motor_winding_temp_c against a reference gauge.
+STRESS-05,2025-12-07T15:54:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5719439188639323,B1 mode-aware z: suction_pressure_kpa z=-6.9,Inspect / clean suction strainer.
+STRESS-05,2025-12-08T14:44:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: suction_pressure_kpa z=-25.5, discharge_pressure_kpa z=-11.3",Inspect / clean suction strainer.
+STRESS-05,2025-12-08T22:46:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-47.2),Verify motor_winding_temp_c against a reference gauge.
+STRESS-06,2025-03-06T15:10:00Z,SENSOR,SENSOR_STUCK,0.99,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-06,2025-03-07T23:09:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.698290745417277,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=8.4),Verify vibration_rms_mm_s against a reference gauge.

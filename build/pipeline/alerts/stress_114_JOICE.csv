@@ -1,0 +1,26 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-09-12T06:17:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-01,2025-09-12T21:42:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-11-03T09:43:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-11-04T09:11:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,discharge_pressure_kpa z=+6.1; head +3% power -2% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-11-04T11:33:00Z,SENSOR,SENSOR_DRIFT,0.75,discharge_pressure_kpa deviates alone (z=+6.5),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-03,2025-07-10T05:21:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.7,valve_position_pct z=+6.6; head factor 1.00 (+0% vs own normal); head -6% power +13% vs reference; control valve opening to hold flow while suction pressure falls,Inspect / clean suction strainer.
+STRESS-03,2025-07-11T00:19:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,"valve_position_pct z=+6.2; head factor 1.00 (-0% vs own normal); head -7% power +18% vs reference; control valve opening to hold flow, suction normal -> resistance downstream",Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-07-11T06:48:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.7,valve_position_pct z=+7.2; head factor 1.00 (-0% vs own normal); head -7% power +17% vs reference; control valve opening to hold flow while suction pressure falls,Inspect / clean suction strainer.
+STRESS-03,2025-07-11T15:28:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+7.5; 1x vibration x1.9,Inspect impeller for fouling; balance.
+STRESS-03,2025-07-12T05:04:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+16.6; 1x vibration x2.7,Inspect impeller for fouling; balance.
+STRESS-03,2025-07-12T20:54:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+22.8; 1x vibration x3.4,Inspect impeller for fouling; balance.
+STRESS-04,2025-03-02T13:19:00Z,MACHINE,IMPELLER_WEAR,0.4,motor_current_a z=+8.0; head -9% power +15% vs reference; head only 100% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-03T05:21:00Z,MACHINE,IMPELLER_WEAR,0.4,"motor_current_a z=+7.7, discharge_pressure_kpa z=-7.0; head -10% power +11% vs reference; head only 95% of datasheet",Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-03T17:45:00Z,MACHINE,IMPELLER_WEAR,0.4,discharge_pressure_kpa z=-7.3; head -8% power +3% vs reference; head only 94% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-04,2025-03-03T22:26:00Z,MACHINE,UNKNOWN,0.3,"discharge_pressure_kpa z=-7.9, motor_current_a z=+6.4; head -5% power +2% vs reference",Inspect pump; cause unclear.
+STRESS-04,2025-03-04T02:42:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"motor_current_a: in-minute range x3.6 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of motor_current_a.
+STRESS-04,2025-03-04T13:16:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,discharge_pressure_kpa z=-13.5; head +4% power -8% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-03-04T20:16:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"discharge_pressure_kpa z=-23.0, motor_current_a z=-6.5; head +0% power -11% vs reference; sea state 0.0 m",Check sea-chest venting / basin level; air in suction.
+STRESS-05,2025-01-03T01:34:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-05,2025-01-03T10:06:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"discharge_pressure_kpa in-minute spread z=43, all other channels calm (<5)",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-06,2025-09-08T06:22:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_winding_temp_c deviates alone (z=-14.1),Verify motor_winding_temp_c against a reference gauge; recalibrate.
+STRESS-06,2025-09-08T22:21:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_winding_temp_c deviates alone (z=+8.4),Verify motor_winding_temp_c against a reference gauge; recalibrate.
+STRESS-06,2025-09-09T14:52:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-09-10T06:21:00Z,MACHINE,UNKNOWN,0.3,"motor_winding_temp_c z=-16.2, motor_power_kw z=-6.7; head factor 0.99 (-0% vs own normal); head +4% power -6% vs reference",Inspect pump; cause unclear.
+STRESS-06,2025-09-10T18:21:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,"valve_position_pct z=+11.8, bearing_temp_c z=+11.0; head factor 0.99 (-0% vs own normal); head +4% power -6% vs reference; control valve opening to hold flow, suction normal -> resistance downstream",Check discharge valves and heat-exchanger fouling.

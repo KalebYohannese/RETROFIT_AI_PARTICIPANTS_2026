@@ -1,0 +1,17 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-13T05:21:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"suction_pressure_kpa in-minute spread z=27, all other channels calm (<5)",Check cabling / grounding of suction_pressure_kpa.
+STRESS-02,2025-09-10T04:52:00Z,SENSOR,SENSOR_DRIFT,0.75,fluid_temp_c deviates alone (z=-6.5),Verify fluid_temp_c against a reference gauge; recalibrate.
+STRESS-02,2025-09-10T11:18:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,fluid_temp_c deviates alone (z=-7.0),Verify fluid_temp_c against a reference gauge; recalibrate.
+STRESS-02,2025-09-10T17:18:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-02,2025-09-11T03:17:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.8; head factor 0.98 (-0% vs own normal); head +2% power -10% vs reference,Inspect / clean suction strainer.
+STRESS-02,2025-09-11T04:28:00Z,MACHINE,MISALIGNMENT,0.7,suction_pressure_kpa z=-6.4; 2x vibration x1.2; restart after 165 min stop,Check coupling alignment (likely after maintenance).
+STRESS-02,2025-09-11T10:36:00Z,MACHINE,IMBALANCE,0.65,suction_pressure_kpa z=-8.7; 1x vibration x1.5,Inspect impeller for fouling; balance.
+STRESS-02,2025-09-11T11:56:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +5.7% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+STRESS-02,2025-09-11T17:32:00Z,MACHINE,MISALIGNMENT,0.7,"suction_pressure_kpa z=-6.8, bearing_temp_c z=+6.1; 2x vibration x1.2; restart after 165 min stop",Check coupling alignment (likely after maintenance).
+STRESS-03,2025-01-02T01:33:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-03,2025-01-02T04:17:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+10.4; head factor 1.02 (-1% vs own normal); head +1% power -10% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-01-02T07:21:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current -4.7% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-03,2025-01-03T21:27:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,"motor_speed_rpm z=+33.4, discharge_pressure_kpa z=+13.5, motor_power_kw z=+10.1; head factor 1.01 (-1% vs own normal); head +2% power -17% vs reference",Inspect / clean suction strainer.
+STRESS-05,2025-01-06T15:54:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-05,2025-01-08T13:35:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.6; head factor 0.98 (+0% vs own normal); head +1% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-06,2025-04-11T10:15:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +4.3% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.

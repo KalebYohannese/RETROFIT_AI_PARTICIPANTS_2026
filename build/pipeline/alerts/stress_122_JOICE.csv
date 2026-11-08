@@ -1,0 +1,25 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-11-12T16:08:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+STRESS-01,2025-11-13T04:35:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-9.2, discharge_pressure_kpa z=+9.1; head +3% power -4% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-11-13T23:25:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+12.9, motor_current_a z=-12.2; head +7% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-11-14T23:25:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"discharge_pressure_kpa z=+13.1, motor_current_a z=-12.2; head +7% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-08-11T22:48:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,suction_pressure_kpa deviates alone (z=+8.3),Verify suction_pressure_kpa against a reference gauge; recalibrate.
+STRESS-02,2025-08-12T07:25:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.51 (healthy ~0.1, x4.9 vs start)",Plan bearing replacement; check lubrication.
+STRESS-02,2025-08-12T12:38:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,suction_pressure_kpa deviates alone (z=+7.8),Verify suction_pressure_kpa against a reference gauge; recalibrate.
+STRESS-03,2025-05-12T11:04:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+7.9; 1x vibration x2.4,Inspect impeller for fouling; balance.
+STRESS-03,2025-05-13T01:26:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+14.7; 1x vibration x3.6,Inspect impeller for fouling; balance.
+STRESS-03,2025-05-13T16:37:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+23.1; 1x vibration x4.9,Inspect impeller for fouling; balance.
+STRESS-04,2025-10-07T11:45:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +4.5% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+STRESS-04,2025-10-07T22:20:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_winding_temp_c deviates alone (z=+7.2),Verify motor_winding_temp_c against a reference gauge; recalibrate.
+STRESS-04,2025-10-08T17:08:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=+6.2; head factor 1.00 (+2% vs own normal); head -0% power +1% vs reference,Inspect pump; cause unclear.
+STRESS-04,2025-10-08T22:20:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_winding_temp_c deviates alone (z=+7.9),Verify motor_winding_temp_c against a reference gauge; recalibrate.
+STRESS-04,2025-10-09T07:05:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+7.9; bearing-defect index 0.07 (healthy ~0.1), crest z=+7.9",Plan bearing replacement; check lubrication.
+STRESS-04,2025-10-09T17:22:00Z,MACHINE,UNKNOWN,0.3,flow_m3_h z=+7.9; head factor 1.00 (+2% vs own normal); head -1% power +1% vs reference,Inspect pump; cause unclear.
+STRESS-04,2025-10-09T18:16:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,"flow_m3_h z=+7.9; head factor 1.00 (+2% vs own normal); head -1% power +1% vs reference; control valve opening to hold flow, suction normal -> resistance downstream",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-09T22:22:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_winding_temp_c deviates alone (z=+8.0),Verify motor_winding_temp_c against a reference gauge; recalibrate.
+STRESS-05,2025-07-05T19:38:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,; head +12% power -5% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-07-05T20:41:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"motor_current_a in-minute spread z=28, all other channels calm (<5)",Check cabling / grounding of motor_current_a.
+STRESS-06,2025-09-15T12:58:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-09-16T18:08:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+7.2),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-09-17T07:03:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+17.7),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-09-17T19:41:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+24.7),Verify motor_current_a against a reference gauge; recalibrate.

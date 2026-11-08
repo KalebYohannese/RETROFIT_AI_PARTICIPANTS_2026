@@ -1,0 +1,82 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+PUMP-01,2025-08-11T13:09:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current +4.5% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+PUMP-01,2025-08-12T14:15:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-7.0; head +2% power +2% vs reference,Inspect pump; cause unclear.
+PUMP-01,2025-08-12T21:49:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,fluid_temp_c deviates alone (z=-8.6),Verify fluid_temp_c against a reference gauge; recalibrate.
+PUMP-01,2025-08-13T00:30:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"fluid_temp_c z=-7.9, suction_pressure_kpa z=-6.8; head +2% power +0% vs reference",Inspect / clean suction strainer.
+PUMP-01,2025-08-14T18:42:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+PUMP-01,2025-08-14T21:00:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.9 h while running (healthy < 1 h),Check wireless sensor / battery.
+PUMP-01,2025-08-15T08:55:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-7.8; head +1% power +3% vs reference,Inspect pump; cause unclear.
+PUMP-01,2025-08-15T21:44:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-7.0; head +2% power +3% vs reference,Inspect pump; cause unclear.
+PUMP-01,2025-08-16T11:27:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-8.3; head +2% power +2% vs reference,Inspect pump; cause unclear.
+PUMP-01,2025-08-17T00:56:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-6.2; head +5% power +7% vs reference,Inspect pump; cause unclear.
+PUMP-01,2025-08-17T05:54:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-7.1; head +1% power -2% vs reference,Inspect / clean suction strainer.
+PUMP-01,2025-08-17T18:05:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-8.7; head +2% power -2% vs reference,Inspect / clean suction strainer.
+PUMP-02,2025-12-01T15:14:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.75 (healthy ~0.1, x1.4 vs start)",Plan bearing replacement; check lubrication.
+PUMP-02,2025-12-02T03:34:00Z,MACHINE,BEARING_WEAR,0.85,"; bearing-defect index 1.29 (healthy ~0.1), crest z=+1.3",Plan bearing replacement; check lubrication.
+PUMP-02,2025-12-02T08:42:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,suction_pressure_kpa deviates alone (z=+6.5),Verify suction_pressure_kpa against a reference gauge; recalibrate.
+PUMP-02,2025-12-03T04:30:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,suction_pressure_kpa deviates alone (z=+10.5),Verify suction_pressure_kpa against a reference gauge; recalibrate.
+PUMP-02,2025-12-03T16:30:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"suction_pressure_kpa noisy, others normal",Check cabling / grounding of suction_pressure_kpa.
+PUMP-02,2025-12-04T04:30:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,suction_pressure_kpa deviates alone (z=+16.6),Verify suction_pressure_kpa against a reference gauge; recalibrate.
+PUMP-02,2025-12-05T04:30:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"vibration_accel_rms_g in-minute spread z=15, all other channels calm (<5)",Check cabling / grounding of vibration_accel_rms_g.
+PUMP-02,2025-12-06T03:53:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_accel_rms_g z=+45.9, vibration_rms_mm_s z=+26.5; bearing-defect index 3.58 (healthy ~0.1), crest z=-4.6",Plan bearing replacement; check lubrication.
+PUMP-02,2025-12-06T23:48:00Z,MACHINE,UNKNOWN,0.3,vibration_crest_factor z=-6.3; head factor 1.02 (+0% vs own normal); head +0% power -0% vs reference,Inspect pump; cause unclear.
+PUMP-02,2025-12-07T11:48:00Z,MACHINE,MISALIGNMENT,0.7,vibration_crest_factor z=-6.4; 2x vibration x2.9; restart after 513 min stop,Check coupling alignment (likely after maintenance).
+PUMP-03,2026-03-03T22:55:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-11.0, discharge_pressure_kpa z=+7.6; head +2% power -4% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-03,2026-03-04T22:55:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-13.9, discharge_pressure_kpa z=+9.7; head +6% power -9% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-03,2026-03-05T22:55:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-14.3, discharge_pressure_kpa z=+10.3; head +6% power -9% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-03,2026-03-06T05:04:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+7.6),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+PUMP-03,2026-03-06T17:31:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+7.9),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+PUMP-03,2026-03-07T07:12:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=+6.9),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+PUMP-03,2026-03-07T19:12:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,discharge_pressure_kpa z=+7.1; head +4% power -2% vs reference,Check discharge valves and heat-exchanger fouling.
+PUMP-04,2025-06-16T00:24:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,"flow_m3_h z=-9.9, motor_power_kw z=-9.0, motor_current_a z=-8.4; head factor 0.96 (+0% vs own normal); head +0% power +0% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-04,2025-06-16T03:16:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.61 (healthy ~0.1, x0.7 vs start)",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-16T11:36:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +4.1% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+PUMP-04,2025-06-16T22:27:00Z,MACHINE,BEARING_WEAR,0.85,"flow_m3_h z=-8.9, motor_power_kw z=-8.2, motor_current_a z=-7.6; bearing-defect index 1.63 (healthy ~0.1), crest z=+1.0",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-17T14:04:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_rms_mm_s z=+9.5; bearing-defect index 2.80 (healthy ~0.1), crest z=+1.2",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-18T04:20:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_rms_mm_s z=+11.8, flow_m3_h z=-9.8, vibration_accel_rms_g z=+8.8; bearing-defect index 3.14 (healthy ~0.1), crest z=-0.1",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-18T21:44:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"flow_m3_h: in-minute range x3.1 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of flow_m3_h.
+PUMP-04,2025-06-19T04:20:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_rms_mm_s z=+25.8, vibration_accel_rms_g z=+21.6, flow_m3_h z=-10.9; bearing-defect index 4.04 (healthy ~0.1), crest z=-2.1",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-19T09:44:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"flow_m3_h: in-minute range x2.5 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of flow_m3_h.
+PUMP-04,2025-06-19T18:41:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_rms_mm_s z=+38.3, vibration_accel_rms_g z=+33.2; bearing-defect index 4.21 (healthy ~0.1), crest z=-4.0",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-20T11:49:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_rms_mm_s z=+70.2, vibration_accel_rms_g z=+50.2; bearing-defect index 4.20 (healthy ~0.1), crest z=-5.5",Plan bearing replacement; check lubrication.
+PUMP-04,2025-06-21T17:00:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"vibration_rms_mm_s in-minute spread z=18, all other channels calm (<5)",Check cabling / grounding of vibration_rms_mm_s.
+PUMP-04,2025-06-22T05:00:00Z,MACHINE,IMBALANCE,0.65,"vibration_rms_mm_s z=+60.3, flow_m3_h z=-22.3, motor_power_kw z=-17.4; 1x vibration x6.7",Inspect impeller for fouling; balance.
+PUMP-04,2025-06-22T10:42:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8,"vibration_rms_mm_s in-minute spread z=16, all other channels calm (<5)",Check cabling / grounding of vibration_rms_mm_s.
+PUMP-05,2026-01-21T10:29:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running,Check transmitter discharge_pressure_kpa.
+PUMP-06,2025-10-09T09:34:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-9.5; head -6% power +10% vs reference,Inspect / clean suction strainer.
+PUMP-06,2025-10-09T19:04:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.97 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-09T19:18:00Z,MACHINE,CAVITATION,0.7,suction_pressure_kpa z=-18.2; head -8% power +7% vs reference,Check suction strainer / level; reduce flow if allowed.
+PUMP-06,2025-10-09T20:14:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.14 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-09T22:33:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.66 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-09T22:47:00Z,MACHINE,MISALIGNMENT,0.7,suction_pressure_kpa z=-18.6; 2x vibration x1.4; restart after 61 min stop,Check coupling alignment (likely after maintenance).
+PUMP-06,2025-10-10T00:50:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.84 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-10T03:20:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.67 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-10T03:34:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"vibration_accel_rms_g z=+38.8, suction_pressure_kpa z=-19.2; head -11% power -0% vs reference; sea state 0.0 m",Check sea-chest venting / basin level; air in suction.
+PUMP-06,2025-10-10T06:55:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.04 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-10T08:41:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.03 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-10T08:55:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-12.4; head +0% power -1% vs reference,Inspect / clean suction strainer.
+PUMP-06,2025-10-10T09:40:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.05 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-06,2025-10-10T11:49:00Z,MACHINE,CAVITATION,0.85,NPSH margin 0.45 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+PUMP-07,2025-05-15T03:45:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,flow_m3_h deviates alone (z=-22.5),Verify flow_m3_h against a reference gauge; recalibrate.
+PUMP-07,2025-05-16T03:45:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,flow_m3_h deviates alone (z=-22.1),Verify flow_m3_h against a reference gauge; recalibrate.
+PUMP-07,2025-05-17T03:52:00Z,MACHINE,UNKNOWN,0.3,; head factor 1.02 (-0% vs own normal); head -0% power -0% vs reference,Inspect pump; cause unclear.
+PUMP-07,2025-05-17T08:56:00Z,MACHINE,AIR_ENTRAINMENT,0.55,flow_m3_h z=-7.1; head factor 0.96 (-6% vs own normal); head -5% power -6% vs reference; head factor fell -5% in 6 h (too fast for wear),Check sea-chest venting / basin level; air in suction.
+PUMP-07,2025-05-17T20:55:00Z,SENSOR,SENSOR_DRIFT,0.75,fluid_temp_c deviates alone (z=+6.7),Verify fluid_temp_c against a reference gauge; recalibrate.
+PUMP-07,2025-05-18T02:30:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+7.5; bearing-defect index 0.10 (healthy ~0.1), crest z=+7.5",Plan bearing replacement; check lubrication.
+PUMP-07,2025-05-18T15:21:00Z,MACHINE,BEARING_WEAR,0.85,"vibration_crest_factor z=+17.5; bearing-defect index 0.06 (healthy ~0.1), crest z=+17.5",Plan bearing replacement; check lubrication.
+PUMP-08,2025-09-10T15:35:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.4; head +2% power -2% vs reference,Inspect / clean suction strainer.
+PUMP-08,2025-09-11T05:52:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-12.1; head +3% power -4% vs reference,Inspect / clean suction strainer.
+PUMP-08,2025-09-11T14:36:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.33 (healthy ~0.1, x4.9 vs start)",Plan bearing replacement; check lubrication.
+PUMP-08,2025-09-12T22:12:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+PUMP-08,2025-09-13T00:13:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.3 h while running (healthy < 1 h),Check wireless sensor / battery.
+PUMP-08,2025-09-13T18:57:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"discharge_pressure_kpa: in-minute range x3.0 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of discharge_pressure_kpa.
+PUMP-09,2026-02-10T07:59:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+19.2; 1x vibration x0.8,Inspect impeller for fouling; balance.
+PUMP-09,2026-02-10T12:51:00Z,SENSOR,SENSOR_DRIFT,0.7,"motor current +4.0% off the current-power line (healthy < 2.5%), gradual",Verify current transducer against a clamp meter.
+PUMP-09,2026-02-10T16:29:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+18.0; 2x vibration x7.3; restart after 201 min stop,Check coupling alignment (likely after maintenance).
+PUMP-09,2026-02-11T04:29:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+7.7),Verify motor_current_a against a reference gauge; recalibrate.
+PUMP-09,2026-02-11T16:29:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+22.1; 2x vibration x7.7; restart after 201 min stop,Check coupling alignment (likely after maintenance).
+PUMP-09,2026-02-12T01:30:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.0 h while running (healthy < 1 h),Check wireless sensor / battery.
+PUMP-09,2026-02-12T23:27:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+23.3; 2x vibration x8.7; restart after 50 min stop,Check coupling alignment (likely after maintenance).
+PUMP-09,2026-02-14T00:57:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-12.1, motor_power_kw z=-7.4; head factor 0.99 (+0% vs own normal); head +2% power -2% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-09,2026-02-15T00:57:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-22.8, motor_power_kw z=-13.8, discharge_pressure_kpa z=+12.2; head factor 1.00 (+0% vs own normal); head +5% power -8% vs reference",Check discharge valves and heat-exchanger fouling.
+PUMP-09,2026-02-15T06:41:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"flow_m3_h z=-27.4, motor_power_kw z=-26.2, motor_current_a z=-11.9; head factor 0.94 (-6% vs own normal); head -0% power -14% vs reference; sea state 0.0 m",Check sea-chest venting / basin level; air in suction.

@@ -1,0 +1,14 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-10-08T00:47:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_current_a deviates alone (z=21.8),Verify motor_current_a against a reference gauge.
+STRESS-01,2025-10-08T12:47:00Z,MACHINE,UNKNOWN,0.99,"B1 mode-aware z: discharge_pressure_kpa z=+14.4, motor_current_a z=+10.2",Inspect pump.
+STRESS-01,2025-10-08T19:33:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_current_a deviates alone (z=21.4),Verify motor_current_a against a reference gauge.
+STRESS-02,2025-06-10T00:35:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-02,2025-06-10T10:34:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7614248593648275,B1 mode-aware z: motor_current_a deviates alone (z=-9.1),Verify motor_current_a against a reference gauge.
+STRESS-04,2025-02-14T03:20:00Z,SENSOR,SENSOR_STUCK,0.6325540145238241,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-05,2025-04-17T18:16:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-05,2025-04-19T00:03:00Z,MACHINE,UNKNOWN,0.5160433451334635,B1 mode-aware z: discharge_pressure_kpa z=+6.2,Inspect pump.
+STRESS-05,2025-04-19T06:12:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5192822217941284,B1 mode-aware z: suction_pressure_kpa z=-6.2,Inspect / clean suction strainer.
+STRESS-05,2025-04-19T13:52:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=12.2),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-06,2025-01-04T10:11:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-06,2025-01-05T21:52:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.552859346071879,B1 mode-aware z: suction_pressure_kpa z=-6.6,Inspect / clean suction strainer.
+STRESS-06,2025-01-06T12:34:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: suction_pressure_kpa z=-23.2, discharge_pressure_kpa z=-11.7",Inspect / clean suction strainer.

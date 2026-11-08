@@ -1,0 +1,24 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-12-03T04:47:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-01,2025-12-03T07:34:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current -8.6% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-01,2025-12-03T22:23:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_power_kw z=-8.8, motor_current_a z=-8.6; head +10% power -13% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-12-04T22:21:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_power_kw z=-9.5, motor_current_a z=-7.3, motor_speed_rpm z=-6.2; head +11% power -13% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-09-04T16:16:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-02,2025-09-04T19:55:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-02,2025-09-04T23:39:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.7,"motor current +10.8% off the current-power line (healthy < 2.5%), sudden",Verify current transducer against a clamp meter.
+STRESS-03,2025-02-08T01:45:00Z,MACHINE,IMBALANCE,0.65,; 1x vibration x1.2,Inspect impeller for fouling; balance.
+STRESS-03,2025-02-08T07:48:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"motor_current_a: in-minute range x4.0 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of motor_current_a.
+STRESS-03,2025-02-08T18:42:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+18.1; 1x vibration x2.8,Inspect impeller for fouling; balance.
+STRESS-03,2025-02-09T06:42:00Z,SENSOR,SENSOR_STUCK,0.9,flow_m3_h frozen while pump running,Check transmitter flow_m3_h.
+STRESS-03,2025-02-09T18:42:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+36.2; 1x vibration x4.6,Inspect impeller for fouling; balance.
+STRESS-04,2025-05-16T03:51:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-05-16T08:24:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+8.1; 1x vibration x0.8,Inspect impeller for fouling; balance.
+STRESS-04,2025-05-16T11:23:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+11.3; 2x vibration x4.0; restart after 156 min stop,Check coupling alignment (likely after maintenance).
+STRESS-05,2025-11-13T10:29:00Z,MACHINE,AIR_ENTRAINMENT,0.6,flow_m3_h z=-6.4; head factor 0.98 (+0% vs own normal); head +1% power -2% vs reference; sea state 1.1 m,Check sea-chest venting / basin level; air in suction.
+STRESS-05,2025-11-14T09:29:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"flow_m3_h z=-33.7, motor_power_kw z=-18.2, motor_current_a z=-15.3; head factor 0.95 (-3% vs own normal); head +4% power -11% vs reference; sea state 1.7 m",Check sea-chest venting / basin level; air in suction.
+STRESS-05,2025-11-14T21:29:00Z,MACHINE,IMPELLER_WEAR,0.6,"flow_m3_h z=-35.1, motor_power_kw z=-19.1, suction_pressure_kpa z=+18.6; head factor 0.94 (-5% vs own normal); head +2% power -11% vs reference",Performance test; inspect impeller / wear rings.
+STRESS-05,2025-11-14T23:56:00Z,MACHINE,AIR_ENTRAINMENT,0.6,"flow_m3_h z=-34.7, suction_pressure_kpa z=+20.9, motor_power_kw z=-18.7; head factor 0.93 (-5% vs own normal); head +2% power -11% vs reference; sea state 2.3 m",Check sea-chest venting / basin level; air in suction.
+STRESS-06,2025-06-10T06:23:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-6.6),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-06-10T22:21:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=+6.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-06,2025-06-11T10:45:00Z,MACHINE,UNKNOWN,0.3,"motor_current_a z=+9.4, fluid_temp_c z=+7.1; head +2% power -2% vs reference",Inspect pump; cause unclear.
+STRESS-06,2025-06-12T22:20:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=+8.4; head +2% power -1% vs reference,Inspect pump; cause unclear.

@@ -1,0 +1,16 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-06-13T10:09:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-01,2025-06-14T00:15:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_power_kw z=-6.6, motor_speed_rpm z=-6.1; head +8% power -9% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-01,2025-06-14T05:42:00Z,MACHINE,UNKNOWN,0.3,"motor_power_kw z=-7.1, motor_speed_rpm z=-6.5; head +3% power -4% vs reference",Inspect pump; cause unclear.
+STRESS-01,2025-06-14T18:31:00Z,MACHINE,UNKNOWN,0.3,"motor_power_kw z=-8.0, motor_speed_rpm z=-7.3; head +0% power -4% vs reference",Inspect pump; cause unclear.
+STRESS-01,2025-06-14T23:31:00Z,MACHINE,IMPELLER_WEAR,0.5,"motor_power_kw z=-7.6, motor_speed_rpm z=-7.1; head +0% power -5% vs reference",Performance test; inspect impeller / wear rings.
+STRESS-01,2025-06-15T15:08:00Z,MACHINE,IMPELLER_WEAR,0.5,"discharge_pressure_kpa z=-9.6, motor_power_kw z=-8.8, motor_speed_rpm z=-8.4; head -4% power -6% vs reference",Performance test; inspect impeller / wear rings.
+STRESS-02,2025-02-10T17:01:00Z,MACHINE,DISCHARGE_RESTRICTION,0.6,flow_m3_h z=-7.7; head factor 1.00 (-0% vs own normal); head +1% power -2% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-02,2025-02-11T05:01:00Z,MACHINE,MISALIGNMENT,0.7,"flow_m3_h z=-29.4, motor_power_kw z=-12.2, discharge_pressure_kpa z=+10.2; 2x vibration x6.0; restart after 210 min stop",Check coupling alignment (likely after maintenance).
+STRESS-02,2025-02-12T05:01:00Z,MACHINE,MISALIGNMENT,0.7,"flow_m3_h z=-38.1, motor_power_kw z=-14.5, discharge_pressure_kpa z=+12.4; 2x vibration x7.1; restart after 210 min stop",Check coupling alignment (likely after maintenance).
+STRESS-03,2025-01-17T04:29:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-01-17T20:43:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-10-04T11:05:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+21.2; 2x vibration x1.7; restart after 213 min stop,Check coupling alignment (likely after maintenance).
+STRESS-04,2025-10-05T14:02:00Z,MACHINE,MISALIGNMENT,0.7,"suction_pressure_kpa z=-40.4, vibration_rms_mm_s z=+33.5, discharge_pressure_kpa z=-16.8; 2x vibration x8.1; restart after 1058 min stop",Check coupling alignment (likely after maintenance).
+STRESS-05,2025-12-16T05:50:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-01-04T22:57:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.

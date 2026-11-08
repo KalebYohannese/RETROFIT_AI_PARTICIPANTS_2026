@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-06-02T17:30:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-01,2025-06-03T14:44:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-34.4),Verify motor_winding_temp_c against a reference gauge.
+STRESS-01,2025-06-04T10:29:00Z,MACHINE,UNKNOWN,0.6837499141693115,B1 mode-aware z: vibration_crest_factor z=+8.2,Inspect pump.
+STRESS-02,2025-05-02T18:34:00Z,MACHINE,UNKNOWN,0.7504576841990153,B1 mode-aware z: motor_current_a z=-9.0,Inspect pump.
+STRESS-02,2025-05-02T23:26:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.9863954385121664,B1 mode-aware z: motor_current_a deviates alone (z=-11.8),Verify motor_current_a against a reference gauge.
+STRESS-02,2025-05-03T03:26:00Z,SENSOR,SENSOR_STUCK,0.99,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-03,2025-06-10T10:01:00Z,SENSOR,SENSOR_STUCK,0.06347274780273438,B1 mode-aware z: motor_current_a frozen,Check transmitter motor_current_a.
+STRESS-03,2025-06-11T02:22:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-04,2025-10-05T18:07:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-04,2025-10-06T01:56:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.544626792271932,B1 mode-aware z: suction_pressure_kpa z=-6.5,Inspect / clean suction strainer.
+STRESS-04,2025-10-07T07:12:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-32.9),Verify motor_winding_temp_c against a reference gauge.
+STRESS-05,2025-11-12T06:35:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5716664791107178,B1 mode-aware z: motor_speed_rpm z=+6.9,Inspect / clean suction strainer.
+STRESS-05,2025-11-12T22:47:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: motor_speed_rpm z=+34.0, motor_winding_temp_c z=-18.5, discharge_pressure_kpa z=+13.5",Inspect / clean suction strainer.
+STRESS-05,2025-11-13T22:47:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: motor_speed_rpm z=+39.7, discharge_pressure_kpa z=+16.0, motor_power_kw z=+12.4",Inspect / clean suction strainer.
+STRESS-06,2025-01-16T07:58:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-06,2025-01-17T08:04:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-18.9),Verify motor_winding_temp_c against a reference gauge.
+STRESS-06,2025-01-18T10:59:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5485538244247437,B1 mode-aware z: suction_pressure_kpa z=-6.6,Inspect / clean suction strainer.

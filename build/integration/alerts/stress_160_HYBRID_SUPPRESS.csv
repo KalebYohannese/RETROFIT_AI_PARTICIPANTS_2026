@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-07-17T12:14:00Z,SENSOR,SENSOR_STUCK,0.9,suction_pressure_kpa frozen while pump running | ML agrees (0.78),Check transmitter suction_pressure_kpa.
+STRESS-01,2025-07-17T13:13:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.8239795918367347,"flow_m3_h: in-minute range x5.7 of normal in 5 of last 15 min, other channels normal | ML agrees (0.82)",Check cabling / grounding of flow_m3_h.
+STRESS-01,2025-07-17T20:16:00Z,MACHINE,IMBALANCE,0.65,vibration_rms_mm_s z=+6.1; 1x vibration x1.8 | ML agrees (0.42),Inspect impeller for fouling; balance.
+STRESS-01,2025-07-18T00:53:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.7751196172248804,suction_pressure_kpa z=-7.2; head factor 1.00 (+0% vs own normal); head +0% power -0% vs reference | ML agrees (0.78),Inspect / clean suction strainer.
+STRESS-02,2025-05-19T01:01:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+6.2; head factor 0.96 (-0% vs own normal); head +1% power -4% vs reference,Inspect / clean suction strainer.
+STRESS-02,2025-05-19T18:28:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+11.8; head factor 0.96 (+0% vs own normal); head +1% power -4% vs reference,Inspect / clean suction strainer.
+STRESS-03,2025-03-08T11:51:00Z,MACHINE,DISCHARGE_RESTRICTION,0.8239795918367347,"discharge_pressure_kpa z=+8.8, motor_speed_rpm z=-6.1, motor_power_kw z=-6.1; head +18% power -13% vs reference | ML agrees (0.82)",Check discharge valves and heat-exchanger fouling.
+STRESS-03,2025-03-09T11:54:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,fluid_temp_c z=+11.4; head +8% power -12% vs reference,Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-15T19:13:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-04,2025-10-15T22:46:00Z,MACHINE,DISCHARGE_RESTRICTION,0.7751196172248804,"flow_m3_h z=-10.9, motor_power_kw z=-7.8; head factor 1.00 (+0% vs own normal); head +2% power -3% vs reference | ML agrees (0.78)",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-16T13:42:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-25.4, motor_power_kw z=-16.3, discharge_pressure_kpa z=+9.6; head factor 1.00 (-0% vs own normal); head +4% power -7% vs reference | ML agrees (0.65)",Check discharge valves and heat-exchanger fouling.
+STRESS-04,2025-10-17T13:42:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"flow_m3_h z=-35.6, motor_power_kw z=-22.9, discharge_pressure_kpa z=+12.7; head factor 0.98 (-2% vs own normal); head +4% power -10% vs reference | ML agrees (0.46)",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-01-19T16:03:00Z,SENSOR,SENSOR_STUCK,0.9,discharge_pressure_kpa frozen while pump running | ML agrees (0.82),Check transmitter discharge_pressure_kpa.
+STRESS-05,2025-01-20T09:04:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-6.3; head -3% power -2% vs reference | ML agrees (0.62),Inspect / clean suction strainer.
+STRESS-06,2025-03-10T02:57:00Z,SENSOR,COMMUNICATION_LOSS,0.9829931972789115,missing rows | ML agrees (0.98),Check gateway / network; data gap.
+STRESS-06,2025-03-10T22:39:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,discharge_pressure_kpa deviates alone (z=-8.1),Verify discharge_pressure_kpa against a reference gauge; recalibrate.
+STRESS-06,2025-03-11T13:03:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,motor_speed_rpm z=+6.2; head -9% power -5% vs reference,Inspect / clean suction strainer.

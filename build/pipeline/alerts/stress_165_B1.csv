@@ -1,0 +1,11 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-06-02T17:22:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.6017804145812988,B1 mode-aware z: suction_pressure_kpa deviates alone (z=-7.2),Verify suction_pressure_kpa against a reference gauge.
+STRESS-01,2025-06-02T21:36:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-01,2025-06-03T06:41:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5409929752349854,B1 mode-aware z: suction_pressure_kpa deviates alone (z=-6.5),Verify suction_pressure_kpa against a reference gauge.
+STRESS-02,2025-08-10T18:39:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.6120147705078125,B1 mode-aware z: discharge_pressure_kpa deviates alone (z=7.3),Verify discharge_pressure_kpa against a reference gauge.
+STRESS-02,2025-08-11T06:39:00Z,MACHINE,UNKNOWN,0.6667353312174479,B1 mode-aware z: discharge_pressure_kpa z=+8.0,Inspect pump.
+STRESS-03,2025-10-16T20:40:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-04,2025-11-12T01:23:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-04,2025-11-12T18:28:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.9853428999582926,B1 mode-aware z: suction_pressure_kpa z=-11.8,Inspect / clean suction strainer.
+STRESS-06,2025-06-19T08:56:00Z,SENSOR,SENSOR_STUCK,0.14261511961619058,B1 mode-aware z: discharge_pressure_kpa frozen,Check transmitter discharge_pressure_kpa.
+STRESS-06,2025-06-20T02:51:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5383992195129395,B1 mode-aware z: motor_current_a deviates alone (z=6.5),Verify motor_current_a against a reference gauge.

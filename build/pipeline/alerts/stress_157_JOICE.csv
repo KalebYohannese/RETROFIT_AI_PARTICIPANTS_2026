@@ -1,0 +1,18 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-03-16T03:26:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-02,2025-06-04T09:02:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-10.5; head +1% power -1% vs reference,Inspect / clean suction strainer.
+STRESS-02,2025-06-04T16:21:00Z,SENSOR,SENSOR_STUCK,0.8,bearing temperature unchanged for 2.1 h while running (healthy < 1 h),Check wireless sensor / battery.
+STRESS-02,2025-06-05T04:55:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-48.2, discharge_pressure_kpa z=-20.6, motor_current_a z=-6.5; head +2% power -3% vs reference",Inspect / clean suction strainer.
+STRESS-02,2025-06-05T10:36:00Z,MACHINE,CAVITATION,0.85,NPSH margin 1.14 < 1.15 for 10 min (water near boiling at inlet),Raise suction level / clean strainer / reduce flow.
+STRESS-03,2025-08-19T09:45:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-08-19T22:38:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-08-20T14:48:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-03,2025-08-20T22:00:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-21.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-04-17T05:21:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.75,motor_current_a deviates alone (z=-6.4),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-04-17T06:21:00Z,SENSOR,SENSOR_DRIFT,0.75,motor_current_a deviates alone (z=-7.2),Verify motor_current_a against a reference gauge; recalibrate.
+STRESS-04,2025-04-17T18:49:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-04,2025-04-18T06:49:00Z,MACHINE,DISCHARGE_RESTRICTION,0.75,"motor_current_a z=-37.4, discharge_pressure_kpa z=+15.8; head +11% power -25% vs reference",Check discharge valves and heat-exchanger fouling.
+STRESS-05,2025-05-04T09:09:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-08-12T09:36:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-06,2025-08-12T12:48:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-08-13T15:13:00Z,SENSOR,SENSOR_DRIFT,0.65,"bearing temp +6.7 C above its normal offset to the water, but vibration and bearing index normal",Verify bearing temperature sensor.

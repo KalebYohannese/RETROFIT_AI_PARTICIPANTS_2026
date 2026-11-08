@@ -1,0 +1,15 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-05-15T08:07:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-01,2025-05-15T15:35:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5786120096842448,B1 mode-aware z: suction_pressure_kpa z=-6.9,Inspect / clean suction strainer.
+STRESS-01,2025-05-15T23:48:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: bearing_temp_c deviates alone (z=-12.8),Verify bearing_temp_c against a reference gauge.
+STRESS-02,2025-01-10T00:29:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-03,2025-05-02T01:41:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-03,2025-05-02T21:08:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: motor_winding_temp_c z=-18.1, motor_speed_rpm z=+12.2, bearing_temp_c z=-6.8",Inspect / clean suction strainer.
+STRESS-03,2025-05-03T01:10:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-13.3),Verify motor_winding_temp_c against a reference gauge.
+STRESS-03,2025-05-03T15:00:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5155558188756307,B1 mode-aware z: motor_speed_rpm z=+6.2,Inspect / clean suction strainer.
+STRESS-03,2025-05-03T22:46:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.99,B1 mode-aware z: motor_winding_temp_c deviates alone (z=-14.6),Verify motor_winding_temp_c against a reference gauge.
+STRESS-04,2025-06-15T00:29:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-05,2025-02-08T00:35:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-05,2025-02-08T11:20:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5147227048873901,B1 mode-aware z: motor_speed_rpm z=+6.2,Inspect / clean suction strainer.
+STRESS-06,2025-09-08T19:42:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-06,2025-09-08T20:53:00Z,MACHINE,BEARING_WEAR,0.99,B1 mode-aware z: vibration_accel_rms_g z=+32.8,Inspect pump bearing; plan replacement; check lubrication.

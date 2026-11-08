@@ -1,0 +1,17 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-03-05T11:21:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-01,2025-03-05T15:52:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 0.39 (healthy ~0.1, x3.2 vs start)",Plan bearing replacement; check lubrication.
+STRESS-02,2025-04-04T05:05:00Z,SENSOR,SENSOR_DRIFT,0.65,"bearing temp +7.1 C above its normal offset to the water, but vibration and bearing index normal",Verify bearing temperature sensor.
+STRESS-02,2025-04-04T06:22:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5,"motor_power_kw z=+10.0, motor_speed_rpm z=+8.2, motor_current_a z=+6.3; head +4% power -6% vs reference",Inspect / clean suction strainer.
+STRESS-02,2025-04-04T10:17:00Z,MACHINE,BEARING_WEAR,0.8,"bearing-defect index 1.00 (healthy ~0.1, x9.4 vs start)",Plan bearing replacement; check lubrication.
+STRESS-03,2025-11-16T10:07:00Z,MACHINE,MISALIGNMENT,0.7,vibration_rms_mm_s z=+26.2; 2x vibration x1.5; restart after 61 min stop,Check coupling alignment (likely after maintenance).
+STRESS-03,2025-11-16T11:31:00Z,SENSOR,COMMUNICATION_LOSS,0.95,missing rows,Check gateway / network; data gap.
+STRESS-04,2025-03-13T10:03:00Z,SENSOR,SENSOR_NOISE_SPIKES,0.75,"discharge_pressure_kpa: in-minute range x3.7 of normal in 5 of last 15 min, other channels normal",Check cabling / grounding of discharge_pressure_kpa.
+STRESS-05,2025-12-16T07:14:00Z,MACHINE,UNKNOWN,0.3,fluid_temp_c z=-6.5; head -1% power +1% vs reference,Inspect pump; cause unclear.
+STRESS-05,2025-12-17T00:06:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,suction_pressure_kpa z=-7.4; head +6% power -8% vs reference,Inspect / clean suction strainer.
+STRESS-05,2025-12-17T22:46:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.75,"suction_pressure_kpa z=-37.9, discharge_pressure_kpa z=-20.9; head +7% power -10% vs reference",Inspect / clean suction strainer.
+STRESS-06,2025-11-11T08:46:00Z,SENSOR,SENSOR_STUCK,0.9,motor_current_a frozen while pump running,Check transmitter motor_current_a.
+STRESS-06,2025-11-11T23:21:00Z,MACHINE,IMPELLER_WEAR,0.4,motor_current_a z=+9.1; head -11% power +13% vs reference; head only 100% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-06,2025-11-12T11:56:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=+7.1; head -5% power +7% vs reference,Inspect pump; cause unclear.
+STRESS-06,2025-11-12T17:18:00Z,MACHINE,IMPELLER_WEAR,0.4,motor_current_a z=+7.1; head -8% power +10% vs reference; head only 102% of datasheet,Performance test; inspect impeller / wear rings.
+STRESS-06,2025-11-13T16:07:00Z,MACHINE,UNKNOWN,0.3,motor_current_a z=+8.2; head -4% power +6% vs reference,Inspect pump; cause unclear.

@@ -1,0 +1,15 @@
+asset_id,alert_time_utc,event_class,fault_type,confidence,evidence,recommended_action
+STRESS-01,2025-05-02T01:11:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
+STRESS-01,2025-05-02T11:00:00Z,MACHINE,UNKNOWN,0.99,B1 mode-aware z: ,Inspect pump.
+STRESS-01,2025-05-03T09:18:00Z,MACHINE,UNKNOWN,0.5532699823379517,"B1 mode-aware z: motor_power_kw z=-6.6, motor_speed_rpm z=-6.0",Inspect pump.
+STRESS-01,2025-05-03T23:09:00Z,MACHINE,UNKNOWN,0.5120494763056437,B1 mode-aware z: motor_power_kw z=-6.1,Inspect pump.
+STRESS-02,2025-06-08T21:44:00Z,SENSOR,SENSOR_STUCK,0.15998021761576334,B1 mode-aware z: discharge_pressure_kpa frozen,Check transmitter discharge_pressure_kpa.
+STRESS-03,2025-09-08T00:15:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5282824834187826,"B1 mode-aware z: motor_current_a z=+6.3, motor_power_kw z=+6.2",Inspect / clean suction strainer.
+STRESS-03,2025-09-08T18:15:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.99,"B1 mode-aware z: motor_power_kw z=+17.0, motor_current_a z=+15.0, motor_speed_rpm z=+9.8",Inspect / clean suction strainer.
+STRESS-04,2025-02-03T15:49:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5747385025024414,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=6.9),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-04,2025-02-04T07:30:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.5757091442743937,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=6.9),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-04,2025-02-04T08:52:00Z,MACHINE,IMBALANCE,0.644005298614502,B1 mode-aware z: vibration_rms_mm_s z=+7.7,Inspect impeller for fouling / damage; balance.
+STRESS-04,2025-02-04T20:16:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.6083571116129557,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=7.3),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-04,2025-02-05T08:47:00Z,SENSOR,SENSOR_CALIBRATION_SHIFT,0.574826717376709,B1 mode-aware z: vibration_rms_mm_s deviates alone (z=6.9),Verify vibration_rms_mm_s against a reference gauge.
+STRESS-05,2025-03-11T15:09:00Z,MACHINE,SUCTION_STRAINER_CLOGGING,0.5361114343007406,B1 mode-aware z: motor_speed_rpm z=+6.4,Inspect / clean suction strainer.
+STRESS-05,2025-03-12T03:43:00Z,SENSOR,COMMUNICATION_LOSS,0.05,B1 mode-aware z: missing rows,Check gateway / network; data gap.
